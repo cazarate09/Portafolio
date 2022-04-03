@@ -1,0 +1,254 @@
+.fijadorMenu{
+    position: fixed;
+    top: 0;
+    background-color: #F5F5F5;
+    width: 100%
+}
+
+
+
+.headerPrincipal,  .descripcion, .skills, .hobbies, .formacion, .experiencia,  .contacto {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1900px;
+    padding: auto;
+    width: 80%;
+}
+
+
+.headerPrincipal-logo{
+    
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+}
+
+
+.tituloPrincipal{
+    
+    color: #464646;
+    display: flex;
+    font-style: italic;
+    font-size: medium;
+    font-weight: lighter;
+    justify-content: start;
+
+}
+
+.headerPrincipal-nav{
+    
+    display: flex;
+    text-decoration: none;
+    
+}
+
+
+/*Links*/
+.items{
+    color: #464646;
+    padding: 5px; 
+    text-decoration: none;
+}
+
+
+
+.containerDescripcion, .contenedorSobreMi, .contenedorFormacion, .contenedorSkills, .contenedorHobbies, .proyectos, .contenedorProyectos, 
+.containerFooter {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 1900px;
+    width: 80%;
+}
+
+
+.divSobreMi, .divFormacion, .divContacto{
+    background-color: #EAF2FD;
+}
+
+
+.descripcion-h1{
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 61px;
+    top: 5px;
+}
+
+.descripcion-h2{
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+.descripcionRedesSociales{
+    color: #464646;
+    display: flex;
+    gap: 15px;
+}
+
+.descripcion-fotoPerfil {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    border-radius: 50%;
+    height: 300px;
+    top: 0px;
+    width: 300px;
+    
+}
+
+.itemsRedes{
+    color: #464646;
+  
+    /*padding: 10px; */
+    text-decoration: none;
+}
+
+
+.iconosRedes{
+    color: #464646;
+   
+}
+
+
+
+.contenedorSkillsHobbiesFormacion
+{
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    color: #3B83BD;
+    flex-basis:1;
+    flex-direction: column;
+    font-family: "Raleway";
+    font-size: 60px;
+    justify-content: flex-end;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.descripcionSkillsHobbies{
+    color: #464646;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
+.detalleFormacion {
+
+    flex-basis:50%;
+}
+
+.imagenesProyectos{
+    align-self: stretch;
+    border-radius: 0px;
+    flex: none;
+    flex-grow: 0;
+    height: 70%;
+    left: 0;
+    margin: 0px 16px;
+    top: 0;
+    width: 601px;
+
+}
+
+.botones  {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: auto;
+}
+
+
+.formContacto{
+   
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 64px;
+    
+}
+
+.formImagen
+{
+    display: block;
+    height: 570px;
+    justify-self: start;
+    width: 464px;
+}
+
+
+
+.camposFormulario{
+    
+    flex-direction: column;
+    left: calc(50% - 656px/2);
+    padding: 0 0 0 32px;
+    width: 35vw;
+}
+
+.contact-tittle{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.contact-subtext{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+}
+
+/*********************************************responsive*************************************************************************************/
+@media screen and (max-width:450px) {
+    html{
+        font-size: 6px;
+    }
+    
+    .contenedorSobreMi, .contenedorSkills, .contenedorHobbies, .contenedorFormacion, .proyectos, .containerFooter{
+        width: 90%;
+    }
+
+    .descripcion-h1{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .descripcion-h2{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .descripcionSkillsHobbies{
+        font-size: 10px;
+    }
+
+    .imagenesProyectos{
+
+        width: 100%;
+    }
+
+    .botones{
+        font-size: 16px;
+    }
+
+    .formImagen{
+    display: none;
+    }    
+}
+
